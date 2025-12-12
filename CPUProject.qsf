@@ -65,3 +65,5 @@ set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name VHDL_FILE ControlUnit.vhd
 set_global_assignment -name VHDL_FILE MemoryArray.vhd
 set_global_assignment -name VHDL_FILE memory_8_by_32.vhd
+set_global_assignment -name VHDL_FILE Register.vhd
+set_global_assignment -name VHDL_FILE BinaryToSevenSegmentDisplay.vhd
