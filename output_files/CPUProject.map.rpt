@@ -1,84 +1,76 @@
-Analysis & Elaboration report for CPUProject
-Mon Dec  8 18:49:07 2025
-Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+Analysis & Synthesis report for CPUProject
+Fri Dec 12 01:52:41 2025
+Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
 ---------------------
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Analysis & Elaboration Settings
-  5. Analysis & Elaboration Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |SimpleCPU|ControlUnit:Map_CU|current_state
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2025  Altera Corporation. All rights reserved.
-Your use of Altera Corporation's design tools, logic functions 
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus Prime License Agreement,
-the Altera IP License Agreement, or other applicable license
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
-Altera and sold by Altera or its authorized distributors.  Please
-refer to the Altera Software License Subscription Agreements 
-on the Quartus Prime software download page.
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                                       ;
-+------------------------------------+-------------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Mon Dec  8 18:49:07 2025           ;
-; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
-; Revision Name                      ; CPUProject                                      ;
-; Top-level Entity Name              ; CPUProject                                      ;
-; Family                             ; MAX 10                                          ;
-; Total logic elements               ; N/A until Partition Merge                       ;
-;     Total combinational functions  ; N/A until Partition Merge                       ;
-;     Dedicated logic registers      ; N/A until Partition Merge                       ;
-; Total registers                    ; N/A until Partition Merge                       ;
-; Total pins                         ; N/A until Partition Merge                       ;
-; Total virtual pins                 ; N/A until Partition Merge                       ;
-; Total memory bits                  ; N/A until Partition Merge                       ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
-; Total PLLs                         ; N/A until Partition Merge                       ;
-; UFM blocks                         ; N/A until Partition Merge                       ;
-; ADC blocks                         ; N/A until Partition Merge                       ;
-+------------------------------------+-------------------------------------------------+
-
-
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 16          ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Dec 12 01:52:40 2025       ;
+; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
+; Revision Name                      ; CPUProject                                  ;
+; Top-level Entity Name              ; SimpleCPU                                   ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; 544                                         ;
+;     Total combinational functions  ; 355                                         ;
+;     Dedicated logic registers      ; 328                                         ;
+; Total registers                    ; 328                                         ;
+; Total pins                         ; 50                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                            ;
+; Analysis & Synthesis Settings                                                                              ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; 10M50DAF484C7G     ;                    ;
-; Top-level entity name                                            ; CPUProject         ; CPUProject         ;
+; Top-level entity name                                            ; SimpleCPU          ; CPUProject         ;
 ; Family name                                                      ; MAX 10             ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -158,24 +150,256 @@ on the Quartus Prime software download page.
 +------------------------------------------------------------------+--------------------+--------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 12          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-12        ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                  ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------+---------+
+; ProgramCounter.vhd               ; yes             ; User VHDL File  ; D:/quartus/CPUProject/ProgramCounter.vhd      ;         ;
+; ArithmeticLogicUnit.vhd          ; yes             ; User VHDL File  ; D:/quartus/CPUProject/ArithmeticLogicUnit.vhd ;         ;
+; ControlUnit.vhd                  ; yes             ; User VHDL File  ; D:/quartus/CPUProject/ControlUnit.vhd         ;         ;
+; memory_8_by_32.vhd               ; yes             ; User VHDL File  ; D:/quartus/CPUProject/memory_8_by_32.vhd      ;         ;
+; Register.vhd                     ; yes             ; User VHDL File  ; D:/quartus/CPUProject/Register.vhd            ;         ;
+; SimpleCPU.vhd                    ; yes             ; User VHDL File  ; D:/quartus/CPUProject/SimpleCPU.vhd           ;         ;
+; TwoToOneMux.vhd                  ; yes             ; User VHDL File  ; D:/quartus/CPUProject/TwoToOneMux.vhd         ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 544       ;
+;                                             ;           ;
+; Total combinational functions               ; 355       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 194       ;
+;     -- 3 input functions                    ; 49        ;
+;     -- <=2 input functions                  ; 112       ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 342       ;
+;     -- arithmetic mode                      ; 13        ;
+;                                             ;           ;
+; Total registers                             ; 328       ;
+;     -- Dedicated logic registers            ; 328       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 50        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 328       ;
+; Total fan-out                               ; 2125      ;
+; Average fan-out                             ; 2.71      ;
++---------------------------------------------+-----------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                        ;
++--------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------+----------------+--------------+
+; Compilation Hierarchy Node     ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                  ; Entity Name    ; Library Name ;
++--------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------+----------------+--------------+
+; |SimpleCPU                     ; 355 (0)             ; 328 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 50   ; 0            ; 0          ; |SimpleCPU                           ; SimpleCPU      ; work         ;
+;    |ALU:MAP_ALU|               ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SimpleCPU|ALU:MAP_ALU               ; ALU            ; work         ;
+;    |ControlUnit:Map_CU|        ; 11 (11)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SimpleCPU|ControlUnit:Map_CU        ; ControlUnit    ; work         ;
+;    |ProgramCounter:Map_PC|     ; 8 (8)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SimpleCPU|ProgramCounter:Map_PC     ; ProgramCounter ; work         ;
+;    |TwoToOneMux:Map_MAR_Mux|   ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SimpleCPU|TwoToOneMux:Map_MAR_Mux   ; TwoToOneMux    ; work         ;
+;    |memory_8_by_32:Map_Memory| ; 317 (317)           ; 264 (264)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SimpleCPU|memory_8_by_32:Map_Memory ; memory_8_by_32 ; work         ;
+;    |reg:Map_A|                 ; 8 (8)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SimpleCPU|reg:Map_A                 ; reg            ; work         ;
+;    |reg:Map_IR|                ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SimpleCPU|reg:Map_IR                ; reg            ; work         ;
+;    |reg:Map_MAR|               ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SimpleCPU|reg:Map_MAR               ; reg            ; work         ;
+;    |reg:Map_MDRI|              ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SimpleCPU|reg:Map_MDRI              ; reg            ; work         ;
+;    |reg:Map_MDRO|              ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SimpleCPU|reg:Map_MDRO              ; reg            ; work         ;
++--------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------+----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |SimpleCPU|ControlUnit:Map_CU|current_state                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
++---------------------------------+----------------------------+------------------------------+------------------------------+---------------------------------+------------------------------+-----------------------------+-----------------------------+---------------------------+------------------------------+-----------------------------+-----------------------------+----------------------+-----------------------+-------------------------+------------------------+------------------------+
+; Name                            ; current_state.increment_pc ; current_state.staa_write_mem ; current_state.staa_load_mdro ; current_state.adaa_store_load_a ; current_state.adaa_load_mdri ; current_state.adaa_read_mem ; current_state.adaa_load_mar ; current_state.ldaa_load_a ; current_state.ldaa_load_mdri ; current_state.ldaa_read_mem ; current_state.ldaa_load_mar ; current_state.decode ; current_state.load_ir ; current_state.load_mdri ; current_state.read_mem ; current_state.load_mar ;
++---------------------------------+----------------------------+------------------------------+------------------------------+---------------------------------+------------------------------+-----------------------------+-----------------------------+---------------------------+------------------------------+-----------------------------+-----------------------------+----------------------+-----------------------+-------------------------+------------------------+------------------------+
+; current_state.load_mar          ; 0                          ; 0                            ; 0                            ; 0                               ; 0                            ; 0                           ; 0                           ; 0                         ; 0                            ; 0                           ; 0                           ; 0                    ; 0                     ; 0                       ; 0                      ; 0                      ;
+; current_state.read_mem          ; 0                          ; 0                            ; 0                            ; 0                               ; 0                            ; 0                           ; 0                           ; 0                         ; 0                            ; 0                           ; 0                           ; 0                    ; 0                     ; 0                       ; 1                      ; 1                      ;
+; current_state.load_mdri         ; 0                          ; 0                            ; 0                            ; 0                               ; 0                            ; 0                           ; 0                           ; 0                         ; 0                            ; 0                           ; 0                           ; 0                    ; 0                     ; 1                       ; 0                      ; 1                      ;
+; current_state.load_ir           ; 0                          ; 0                            ; 0                            ; 0                               ; 0                            ; 0                           ; 0                           ; 0                         ; 0                            ; 0                           ; 0                           ; 0                    ; 1                     ; 0                       ; 0                      ; 1                      ;
+; current_state.decode            ; 0                          ; 0                            ; 0                            ; 0                               ; 0                            ; 0                           ; 0                           ; 0                         ; 0                            ; 0                           ; 0                           ; 1                    ; 0                     ; 0                       ; 0                      ; 1                      ;
+; current_state.ldaa_load_mar     ; 0                          ; 0                            ; 0                            ; 0                               ; 0                            ; 0                           ; 0                           ; 0                         ; 0                            ; 0                           ; 1                           ; 0                    ; 0                     ; 0                       ; 0                      ; 1                      ;
+; current_state.ldaa_read_mem     ; 0                          ; 0                            ; 0                            ; 0                               ; 0                            ; 0                           ; 0                           ; 0                         ; 0                            ; 1                           ; 0                           ; 0                    ; 0                     ; 0                       ; 0                      ; 1                      ;
+; current_state.ldaa_load_mdri    ; 0                          ; 0                            ; 0                            ; 0                               ; 0                            ; 0                           ; 0                           ; 0                         ; 1                            ; 0                           ; 0                           ; 0                    ; 0                     ; 0                       ; 0                      ; 1                      ;
+; current_state.ldaa_load_a       ; 0                          ; 0                            ; 0                            ; 0                               ; 0                            ; 0                           ; 0                           ; 1                         ; 0                            ; 0                           ; 0                           ; 0                    ; 0                     ; 0                       ; 0                      ; 1                      ;
+; current_state.adaa_load_mar     ; 0                          ; 0                            ; 0                            ; 0                               ; 0                            ; 0                           ; 1                           ; 0                         ; 0                            ; 0                           ; 0                           ; 0                    ; 0                     ; 0                       ; 0                      ; 1                      ;
+; current_state.adaa_read_mem     ; 0                          ; 0                            ; 0                            ; 0                               ; 0                            ; 1                           ; 0                           ; 0                         ; 0                            ; 0                           ; 0                           ; 0                    ; 0                     ; 0                       ; 0                      ; 1                      ;
+; current_state.adaa_load_mdri    ; 0                          ; 0                            ; 0                            ; 0                               ; 1                            ; 0                           ; 0                           ; 0                         ; 0                            ; 0                           ; 0                           ; 0                    ; 0                     ; 0                       ; 0                      ; 1                      ;
+; current_state.adaa_store_load_a ; 0                          ; 0                            ; 0                            ; 1                               ; 0                            ; 0                           ; 0                           ; 0                         ; 0                            ; 0                           ; 0                           ; 0                    ; 0                     ; 0                       ; 0                      ; 1                      ;
+; current_state.staa_load_mdro    ; 0                          ; 0                            ; 1                            ; 0                               ; 0                            ; 0                           ; 0                           ; 0                         ; 0                            ; 0                           ; 0                           ; 0                    ; 0                     ; 0                       ; 0                      ; 1                      ;
+; current_state.staa_write_mem    ; 0                          ; 1                            ; 0                            ; 0                               ; 0                            ; 0                           ; 0                           ; 0                         ; 0                            ; 0                           ; 0                           ; 0                    ; 0                     ; 0                       ; 0                      ; 1                      ;
+; current_state.increment_pc      ; 1                          ; 0                            ; 0                            ; 0                               ; 0                            ; 0                           ; 0                           ; 0                         ; 0                            ; 0                           ; 0                           ; 0                    ; 0                     ; 0                       ; 0                      ; 1                      ;
++---------------------------------+----------------------------+------------------------------+------------------------------+---------------------------------+------------------------------+-----------------------------+-----------------------------+---------------------------+------------------------------+-----------------------------+-----------------------------+----------------------+-----------------------+-------------------------+------------------------+------------------------+
+
+
++--------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                   ;
++----------------------------------------+---------------------------------------------+
+; Register name                          ; Reason for Removal                          ;
++----------------------------------------+---------------------------------------------+
+; ProgramCounter:Map_PC|counter[0]       ; Merged with ProgramCounter:Map_PC|output[0] ;
+; ProgramCounter:Map_PC|counter[1]       ; Merged with ProgramCounter:Map_PC|output[1] ;
+; ProgramCounter:Map_PC|counter[2]       ; Merged with ProgramCounter:Map_PC|output[2] ;
+; ProgramCounter:Map_PC|counter[3]       ; Merged with ProgramCounter:Map_PC|output[3] ;
+; ProgramCounter:Map_PC|counter[4]       ; Merged with ProgramCounter:Map_PC|output[4] ;
+; ProgramCounter:Map_PC|counter[5]       ; Merged with ProgramCounter:Map_PC|output[5] ;
+; ProgramCounter:Map_PC|counter[6]       ; Merged with ProgramCounter:Map_PC|output[6] ;
+; ProgramCounter:Map_PC|counter[7]       ; Merged with ProgramCounter:Map_PC|output[7] ;
+; ProgramCounter:Map_PC|counter[8..31]   ; Lost fanout                                 ;
+; Total Number of Removed Registers = 32 ;                                             ;
++----------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 328   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 8     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 311   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 50                          ;
+; cycloneiii_ff         ; 328                         ;
+;     ENA               ; 303                         ;
+;     ENA SLD           ; 8                           ;
+;     plain             ; 17                          ;
+; cycloneiii_lcell_comb ; 355                         ;
+;     arith             ; 13                          ;
+;         2 data inputs ; 5                           ;
+;         3 data inputs ; 8                           ;
+;     normal            ; 342                         ;
+;         1 data inputs ; 104                         ;
+;         2 data inputs ; 3                           ;
+;         3 data inputs ; 41                          ;
+;         4 data inputs ; 194                         ;
+;                       ;                             ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 3.14                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
-    Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Mon Dec  8 18:49:00 2025
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPUProject -c CPUProject --analysis_and_elaboration
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+    Info: Processing started: Fri Dec 12 01:52:30 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPUProject -c CPUProject
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file programcounter.vhd
-    Info (12022): Found design unit 1: CPUProject-behavior File: C:/Users/nateo/Desktop/CPUProject/ProgramCounter.vhd Line: 13
-    Info (12023): Found entity 1: CPUProject File: C:/Users/nateo/Desktop/CPUProject/ProgramCounter.vhd Line: 6
-Info (12127): Elaborating entity "CPUProject" for the top level hierarchy
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4806 megabytes
-    Info: Processing ended: Mon Dec  8 18:49:07 2025
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:17
+    Info (12022): Found design unit 1: ProgramCounter-behavior File: D:/quartus/CPUProject/ProgramCounter.vhd Line: 13
+    Info (12023): Found entity 1: ProgramCounter File: D:/quartus/CPUProject/ProgramCounter.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file arithmeticlogicunit.vhd
+    Info (12022): Found design unit 1: ALU-behavior File: D:/quartus/CPUProject/ArithmeticLogicUnit.vhd Line: 17
+    Info (12023): Found entity 1: ALU File: D:/quartus/CPUProject/ArithmeticLogicUnit.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file controlunit.vhd
+    Info (12022): Found design unit 1: ControlUnit-behavior File: D:/quartus/CPUProject/ControlUnit.vhd Line: 22
+    Info (12023): Found entity 1: ControlUnit File: D:/quartus/CPUProject/ControlUnit.vhd Line: 6
+Warning (12019): Can't analyze file -- file MemoryArray.vhd is missing
+Info (12021): Found 2 design units, including 1 entities, in source file memory_8_by_32.vhd
+    Info (12022): Found design unit 1: memory_8_by_32-behavior File: D:/quartus/CPUProject/memory_8_by_32.vhd Line: 15
+    Info (12023): Found entity 1: memory_8_by_32 File: D:/quartus/CPUProject/memory_8_by_32.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file register.vhd
+    Info (12022): Found design unit 1: reg-behavior File: D:/quartus/CPUProject/Register.vhd Line: 13
+    Info (12023): Found entity 1: reg File: D:/quartus/CPUProject/Register.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file binarytosevensegmentdisplay.vhd
+    Info (12022): Found design unit 1: sevenseg-logic File: D:/quartus/CPUProject/BinaryToSevenSegmentDisplay.vhd Line: 9
+    Info (12023): Found entity 1: sevenseg File: D:/quartus/CPUProject/BinaryToSevenSegmentDisplay.vhd Line: 3
+Info (12021): Found 2 design units, including 1 entities, in source file simplecpu.vhd
+    Info (12022): Found design unit 1: SimpleCPU-behavior File: D:/quartus/CPUProject/SimpleCPU.vhd Line: 18
+    Info (12023): Found entity 1: SimpleCPU File: D:/quartus/CPUProject/SimpleCPU.vhd Line: 3
+Info (12021): Found 2 design units, including 1 entities, in source file twotoonemux.vhd
+    Info (12022): Found design unit 1: TwoToOneMux-behavior File: D:/quartus/CPUProject/TwoToOneMux.vhd Line: 13
+    Info (12023): Found entity 1: TwoToOneMux File: D:/quartus/CPUProject/TwoToOneMux.vhd Line: 4
+Info (12127): Elaborating entity "SimpleCPU" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at SimpleCPU.vhd(109): used implicit default value for signal "aToAluB" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/quartus/CPUProject/SimpleCPU.vhd Line: 109
+Info (12128): Elaborating entity "memory_8_by_32" for hierarchy "memory_8_by_32:Map_Memory" File: D:/quartus/CPUProject/SimpleCPU.vhd Line: 124
+Info (12128): Elaborating entity "reg" for hierarchy "reg:Map_A" File: D:/quartus/CPUProject/SimpleCPU.vhd Line: 133
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:MAP_ALU" File: D:/quartus/CPUProject/SimpleCPU.vhd Line: 145
+Warning (10631): VHDL Process Statement warning at ArithmeticLogicUnit.vhd(19): inferring latch(es) for signal or variable "output", which holds its previous value in one or more paths through the process File: D:/quartus/CPUProject/ArithmeticLogicUnit.vhd Line: 19
+Info (10041): Inferred latch for "output[0]" at ArithmeticLogicUnit.vhd(19) File: D:/quartus/CPUProject/ArithmeticLogicUnit.vhd Line: 19
+Info (10041): Inferred latch for "output[1]" at ArithmeticLogicUnit.vhd(19) File: D:/quartus/CPUProject/ArithmeticLogicUnit.vhd Line: 19
+Info (10041): Inferred latch for "output[2]" at ArithmeticLogicUnit.vhd(19) File: D:/quartus/CPUProject/ArithmeticLogicUnit.vhd Line: 19
+Info (10041): Inferred latch for "output[3]" at ArithmeticLogicUnit.vhd(19) File: D:/quartus/CPUProject/ArithmeticLogicUnit.vhd Line: 19
+Info (10041): Inferred latch for "output[4]" at ArithmeticLogicUnit.vhd(19) File: D:/quartus/CPUProject/ArithmeticLogicUnit.vhd Line: 19
+Info (10041): Inferred latch for "output[5]" at ArithmeticLogicUnit.vhd(19) File: D:/quartus/CPUProject/ArithmeticLogicUnit.vhd Line: 19
+Info (10041): Inferred latch for "output[6]" at ArithmeticLogicUnit.vhd(19) File: D:/quartus/CPUProject/ArithmeticLogicUnit.vhd Line: 19
+Info (10041): Inferred latch for "output[7]" at ArithmeticLogicUnit.vhd(19) File: D:/quartus/CPUProject/ArithmeticLogicUnit.vhd Line: 19
+Info (12128): Elaborating entity "ProgramCounter" for hierarchy "ProgramCounter:Map_PC" File: D:/quartus/CPUProject/SimpleCPU.vhd Line: 156
+Info (12128): Elaborating entity "TwoToOneMux" for hierarchy "TwoToOneMux:Map_MAR_Mux" File: D:/quartus/CPUProject/SimpleCPU.vhd Line: 179
+Info (12128): Elaborating entity "ControlUnit" for hierarchy "ControlUnit:Map_CU" File: D:/quartus/CPUProject/SimpleCPU.vhd Line: 224
+Warning (14026): LATCH primitive "ALU:MAP_ALU|output[0]" is permanently enabled File: D:/quartus/CPUProject/ArithmeticLogicUnit.vhd Line: 19
+Warning (14026): LATCH primitive "ALU:MAP_ALU|output[1]" is permanently enabled File: D:/quartus/CPUProject/ArithmeticLogicUnit.vhd Line: 19
+Warning (14026): LATCH primitive "ALU:MAP_ALU|output[2]" is permanently enabled File: D:/quartus/CPUProject/ArithmeticLogicUnit.vhd Line: 19
+Warning (14026): LATCH primitive "ALU:MAP_ALU|output[3]" is permanently enabled File: D:/quartus/CPUProject/ArithmeticLogicUnit.vhd Line: 19
+Warning (14026): LATCH primitive "ALU:MAP_ALU|output[4]" is permanently enabled File: D:/quartus/CPUProject/ArithmeticLogicUnit.vhd Line: 19
+Warning (14026): LATCH primitive "ALU:MAP_ALU|output[5]" is permanently enabled File: D:/quartus/CPUProject/ArithmeticLogicUnit.vhd Line: 19
+Warning (14026): LATCH primitive "ALU:MAP_ALU|output[6]" is permanently enabled File: D:/quartus/CPUProject/ArithmeticLogicUnit.vhd Line: 19
+Warning (14026): LATCH primitive "ALU:MAP_ALU|output[7]" is permanently enabled File: D:/quartus/CPUProject/ArithmeticLogicUnit.vhd Line: 19
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276013): RAM logic "memory_8_by_32:Map_Memory|Z" is uninferred because MIF is not supported for the selected family File: D:/quartus/CPUProject/memory_8_by_32.vhd Line: 20
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 24 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 594 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 1 input pins
+    Info (21059): Implemented 49 output pins
+    Info (21061): Implemented 544 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 4843 megabytes
+    Info: Processing ended: Fri Dec 12 01:52:41 2025
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:14
 
 

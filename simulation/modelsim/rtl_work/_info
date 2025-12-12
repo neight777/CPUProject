@@ -1,0 +1,303 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/quartus/CPUProject/simulation/modelsim
+Ealu
+Z1 w1765346364
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z6 8D:/quartus/CPUProject/ArithmeticLogicUnit.vhd
+Z7 FD:/quartus/CPUProject/ArithmeticLogicUnit.vhd
+l0
+L8
+VRbCQ3i3koJh@7PeT>?dam2
+!s100 8UzWWFTBOnF31B:k]AoQn1
+Z8 OV;C;10.5b;63
+31
+Z9 !s110 1765523214
+!i10b 1
+Z10 !s108 1765523214.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|D:/quartus/CPUProject/ArithmeticLogicUnit.vhd|
+Z12 !s107 D:/quartus/CPUProject/ArithmeticLogicUnit.vhd|
+!i113 1
+Z13 o-93 -work work
+Z14 tExplicit 1 CvgOpt 0
+Abehavior
+R2
+R3
+R4
+R5
+DEx4 work 3 alu 0 22 RbCQ3i3koJh@7PeT>?dam2
+l18
+L17
+V0ARcI<PlCBHj^853FH;WZ3
+!s100 eZ=0QOh0UeGbYFRbPC:]i0
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Econtrolunit
+Z15 w1765522193
+R3
+R2
+R4
+R5
+R0
+Z16 8D:/quartus/CPUProject/ControlUnit.vhd
+Z17 FD:/quartus/CPUProject/ControlUnit.vhd
+l0
+L6
+V^C;9=fV4ekUXm@[ZjJG2D2
+!s100 hm<An]Cd=`7@CVLIVcJo11
+R8
+31
+R9
+!i10b 1
+R10
+Z18 !s90 -reportprogress|300|-93|-work|work|D:/quartus/CPUProject/ControlUnit.vhd|
+Z19 !s107 D:/quartus/CPUProject/ControlUnit.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R3
+R2
+R4
+R5
+DEx4 work 11 controlunit 0 22 ^C;9=fV4ekUXm@[ZjJG2D2
+l27
+L22
+V?i]DB=?6Q0S5FGROeAzI;3
+!s100 _ih1oCYR;jGkEH_M@nid01
+R8
+31
+R9
+!i10b 1
+R10
+R18
+R19
+!i113 1
+R13
+R14
+Ememory_8_by_32
+Z20 w1765522192
+R2
+R3
+R4
+R5
+R0
+Z21 8D:/quartus/CPUProject/memory_8_by_32.vhd
+Z22 FD:/quartus/CPUProject/memory_8_by_32.vhd
+l0
+L6
+VojGd:Y8_GGlO38g`MHBYa2
+!s100 0FU]@]>d:f@CQS3dRnMF41
+R8
+31
+R9
+!i10b 1
+R10
+Z23 !s90 -reportprogress|300|-93|-work|work|D:/quartus/CPUProject/memory_8_by_32.vhd|
+Z24 !s107 D:/quartus/CPUProject/memory_8_by_32.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R2
+R3
+R4
+R5
+DEx4 work 14 memory_8_by_32 0 22 ojGd:Y8_GGlO38g`MHBYa2
+l24
+L15
+VhdgeX@MU1L_zzmF@]LzKc2
+!s100 9Z2o;BQACM6LGNzU2hBRi2
+R8
+31
+R9
+!i10b 1
+R10
+R23
+R24
+!i113 1
+R13
+R14
+Eprogramcounter
+R1
+R2
+R3
+R4
+R5
+R0
+Z25 8D:/quartus/CPUProject/ProgramCounter.vhd
+Z26 FD:/quartus/CPUProject/ProgramCounter.vhd
+l0
+L6
+V2B<AJobE>ND;GXZRU6J:O2
+!s100 nMQE9EknhXC14ZkOG?gzW2
+R8
+31
+R9
+!i10b 1
+R10
+Z27 !s90 -reportprogress|300|-93|-work|work|D:/quartus/CPUProject/ProgramCounter.vhd|
+Z28 !s107 D:/quartus/CPUProject/ProgramCounter.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R2
+R3
+R4
+R5
+DEx4 work 14 programcounter 0 22 2B<AJobE>ND;GXZRU6J:O2
+l14
+L13
+V6YZ<W_TWE@mFSMf6gj;Lk3
+!s100 e<@laGjl43cG;X8QJ@eoV1
+R8
+31
+R9
+!i10b 1
+R10
+R27
+R28
+!i113 1
+R13
+R14
+Ereg
+Z29 w1765518992
+R2
+R3
+R4
+R5
+R0
+Z30 8D:/quartus/CPUProject/Register.vhd
+Z31 FD:/quartus/CPUProject/Register.vhd
+l0
+L5
+VhD?4<D>QYLC3<_^Kk:9Z31
+!s100 FN]B;4VCEV=VPIfG2h<6A2
+R8
+31
+R9
+!i10b 1
+R10
+Z32 !s90 -reportprogress|300|-93|-work|work|D:/quartus/CPUProject/Register.vhd|
+Z33 !s107 D:/quartus/CPUProject/Register.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R2
+R3
+R4
+R5
+DEx4 work 3 reg 0 22 hD?4<D>QYLC3<_^Kk:9Z31
+l14
+L13
+Vf9D23g1MH0LzJOn^eK0l13
+!s100 l^gX56gbS6MX52DWbjo:?3
+R8
+31
+R9
+!i10b 1
+R10
+R32
+R33
+!i113 1
+R13
+R14
+Esimplecpu
+Z34 w1765522350
+R4
+R5
+R0
+Z35 8D:/quartus/CPUProject/SimpleCPU.vhd
+Z36 FD:/quartus/CPUProject/SimpleCPU.vhd
+l0
+L3
+VXi2U4=<9GIfJ@Sa0;a5h:0
+!s100 ;A><_e?obCeL2IhWFL]Q_0
+R8
+31
+R9
+!i10b 1
+R10
+Z37 !s90 -reportprogress|300|-93|-work|work|D:/quartus/CPUProject/SimpleCPU.vhd|
+Z38 !s107 D:/quartus/CPUProject/SimpleCPU.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R4
+R5
+DEx4 work 9 simplecpu 0 22 Xi2U4=<9GIfJ@Sa0;a5h:0
+l120
+L18
+V6_4[ZL@h]iNI3SBBTf?O41
+!s100 ]`L>TBzodmBRoUYJLXQi33
+R8
+31
+R9
+!i10b 1
+R10
+R37
+R38
+!i113 1
+R13
+R14
+Etwotoonemux
+Z39 w1765521863
+R4
+R5
+R0
+Z40 8D:/quartus/CPUProject/TwoToOneMux.vhd
+Z41 FD:/quartus/CPUProject/TwoToOneMux.vhd
+l0
+L4
+VJ:3K1XBPgm5_LhTD@iYg;3
+!s100 A3D@m^[z=2J4UL>V88Eml0
+R8
+31
+R9
+!i10b 1
+R10
+Z42 !s90 -reportprogress|300|-93|-work|work|D:/quartus/CPUProject/TwoToOneMux.vhd|
+Z43 !s107 D:/quartus/CPUProject/TwoToOneMux.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R4
+R5
+DEx4 work 11 twotoonemux 0 22 J:3K1XBPgm5_LhTD@iYg;3
+l14
+L13
+VkXm^NOV`go18keAoK[io02
+!s100 CXc5U5P8CVL>AmhRO4jJZ2
+R8
+31
+R9
+!i10b 1
+R10
+R42
+R43
+!i113 1
+R13
+R14

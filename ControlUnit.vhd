@@ -87,9 +87,15 @@ end process;
 
 process(current_state)
 begin
-	ToALoad <= '0';
-	ToMdroLoad <= '0';
-	ToAluOp <= "000";
+  ToALoad          <= '0';
+  ToMarLoad        <= '0';
+  ToIrLoad         <= '0';
+  ToMdriLoad       <= '0';
+  ToMdroLoad       <= '0';
+  ToPcIncrement    <= '0';
+  ToMarMux         <= '0';
+  ToRamWriteEnable <= '0';
+  ToAluOp          <= "000";
 	case current_state is
 	
 		when increment_pc => 
@@ -272,4 +278,3 @@ begin
 end process;
 end behavior;
 
-

@@ -2,6 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_arith.all;
 use ieee.std_logic_unsigned.all;
+
 entity memory_8_by_32 is
 Port(
 clk: in std_logic;
@@ -10,6 +11,7 @@ Read_Addr: in std_logic_vector (4 downto 0);
 Data_in: in std_logic_vector (7 downto 0);
 Data_out: out std_logic_vector(7 downto 0));
 end memory_8_by_32;
+
 architecture behavior of memory_8_by_32 is
 type ram_type is array(0 to 31) of std_logic_vector(7 downto 0);
 --hardcoded RAM
